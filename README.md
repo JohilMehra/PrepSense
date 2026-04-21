@@ -1,129 +1,99 @@
-# PrepSense
+# PrepSense – AI-Based Interview Simulation Platform
 
-PrepSense is a full-stack AI-powered platform designed to help users prepare for interviews, improve resumes, and follow personalized learning roadmaps.
+PrepSense is a full-stack web application that simulates real-world technical and behavioral interview rounds. It helps students prepare effectively through structured assessments, coding tests, and AI-driven feedback.
 
-## 🌟 Features
+---
 
-* 🎯 AI Mock Interviews
-* 📄 Resume Analysis & Feedback
-* 🛣️ Personalized Learning Roadmaps
-* 🔐 User Authentication (Login/Register)
-* 📊 Dashboard to track progress
+## ✨ Features
+
+* Structured interview rounds (Fundamentals, Coding, Project, Scenario, HR)
+* Coding assessments with company-style MCQs
+* AI-based evaluation for descriptive answers
+* Performance analysis with strengths and weaknesses
+* Progress tracking across multiple attempts
+* Personalized improvement insights
 
 ---
 
 ## 🛠️ Tech Stack
 
-**Frontend:**
+* Frontend: React, Tailwind CSS
+* Backend: Node.js, Express.js
+* Database: MongoDB (Mongoose)
+* AI Integration: Gemini API
 
-* React (Vite)
-* Tailwind CSS
+---
 
-**Backend:**
+## ⚙️ How It Works
 
-* Node.js
-* Express.js
-
-**Database:**
-
-* MongoDB
-
-**Other:**
-
-* REST APIs
-* AI Services Integration
+1. User starts an interview session
+2. System generates structured questions
+3. User answers MCQ and descriptive questions
+4. AI evaluates responses and calculates score
+5. Dashboard displays performance and weak areas
 
 ---
 
 ## 📁 Project Structure
 
-```
-PrepSense/
-│
-├── client/        # Frontend (React)
-├── server/        # Backend (Node.js + Express)
-└── README.md
-```
+client/     → React frontend
+server/     → Node.js backend
+data/       → Question datasets
+routes/     → API routes
+models/     → Database schemas
 
 ---
 
-## ⚙️ Installation & Setup
+## ▶️ Run Locally
 
-### 1. Clone the repository
+Clone the repository:
+git clone https://github.com/JohilMehra/YOUR_REPO_NAME.git
 
-```
-git clone https://github.com/JohilMehra/PrepSense.git
-cd PrepSense
-```
-
-### 2. Setup Backend
-
-```
+Backend setup:
 cd server
 npm install
-npm run dev
-```
+npm start
 
-### 3. Setup Frontend
-
-```
+Frontend setup:
 cd client
 npm install
 npm run dev
-```
 
 ---
 
-## 🔑 Environment Variables
+## 🔐 Environment Variables
 
-Create a `.env` file in the **server** folder:
+Create a `.env` file inside the server folder:
 
-```
 MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
-AI_API_KEY=your_api_key
-```
+GEMINI_API_KEY=your_api_key
+JWT_SECRET=your_secret
 
 ---
 
-## 🚀 Usage
+## 🚧 Future Enhancements
 
-* Open `http://localhost:5173`
-* Register/Login
-* Upload resume, take interviews, and explore roadmap
-
----
-
-## 🧠 Future Enhancements
-
-* 🔊 Voice-based AI interviews
-* 📹 Video interview simulation
-* 📈 Advanced analytics & performance tracking
-* 🤖 More accurate AI feedback with LLM fine-tuning
-* 🌐 Multi-language support
-* 📱 Mobile app version
-* 🧾 Resume auto-builder feature
-* 🔔 Notifications & reminders
-* 🧑‍🤝‍🧑 Peer mock interview system
+* Video and voice-based interview simulation
+* Adaptive AI-based question generation
+* Resume scoring (ATS analysis)
+* Advanced analytics dashboard
+* Multi-role interview support
+* Mobile-friendly version
 
 ---
 
-## 🤝 Contributing
+## 🏆 Motivation
 
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+This project aims to bridge the gap between practice platforms and real interview experiences by providing a structured and realistic interview simulation system.
 
 ---
 
-## 👨‍💻 Author
+## 📌 Author
 
-**Johil**
+Johil Mehra
 
 ---
 
-⭐ If you like this project, don’t forget to star the repo!
+## ⭐ Support
+
+If you found this project useful, consider giving it a star on GitHub.
